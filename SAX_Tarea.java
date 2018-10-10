@@ -104,7 +104,8 @@ public class SAX_Tarea {
 		System.out.println("Prueba EN STRING: "+prueba);
 		String t_men=prueba.substring(0,2);		
 		System.out.println("Prueba EN STRING: "+t_men);
-		int prueba_1=Integer.parseInt(prueba);		
+    // RECIVE FLOAT INSTEAD OF INT
+		float prueba_1=Float.parseFloat(prueba);		
 		System.out.println("Prueba EN INT: "+prueba_1);
 		
 }
