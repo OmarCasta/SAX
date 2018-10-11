@@ -57,13 +57,13 @@ public class Read_XML {
 			Node node = nLists.item(temp);
 		    Element eElement = (Element) node;	
 			if (var.equals(eElement.getElementsByTagName("genre").item(0).getTextContent())){
-		    	System.out.println("id : "    + eElement.getAttribute("id"));
-		    	System.out.println("title : "  + eElement.getElementsByTagName("title").item(0).getTextContent());
-		    	System.out.println("author : "  + eElement.getElementsByTagName("author").item(0).getTextContent());
-		    	System.out.println("genre : "   + eElement.getElementsByTagName("genre").item(0).getTextContent());
-		    	System.out.println("price : "    + eElement.getElementsByTagName("price").item(0).getTextContent());
+		    		System.out.println("id : "    + eElement.getAttribute("id"));
+		    		System.out.println("title : "  + eElement.getElementsByTagName("title").item(0).getTextContent());
+		    		System.out.println("author : "  + eElement.getElementsByTagName("author").item(0).getTextContent());
+		    		System.out.println("genre : "   + eElement.getElementsByTagName("genre").item(0).getTextContent());
+		    		System.out.println("price : "    + eElement.getElementsByTagName("price").item(0).getTextContent());
 		 		System.out.println("publish_date : "  + eElement.getElementsByTagName("publish_date").item(0).getTextContent());
-		    	System.out.println("description : "   + eElement.getElementsByTagName("description").item(0).getTextContent());
+		    		System.out.println("description : "   + eElement.getElementsByTagName("description").item(0).getTextContent());
 		    }
 		}
 }
@@ -73,19 +73,19 @@ public class Read_XML {
 		for (int temp = 0; temp < nLists.getLength(); temp++)
 		{
 			Node node = nLists.item(temp);
-		    Element eElement = (Element) node;	
+		    	Element eElement = (Element) node;	
 			if (var2.equals(eElement.getElementsByTagName("genre").item(0).getTextContent())){
-		    	System.out.println("id : "    + eElement.getAttribute("id"));
-		    	System.out.println("title : "  + eElement.getElementsByTagName("title").item(0).getTextContent());
-		    	System.out.println("author : "  + eElement.getElementsByTagName("author").item(0).getTextContent());
-		    	System.out.println("genre : "   + eElement.getElementsByTagName("genre").item(0).getTextContent());
-		    	System.out.println("price : "    + eElement.getElementsByTagName("price").item(0).getTextContent());
+		    		System.out.println("id : "    + eElement.getAttribute("id"));
+		    		System.out.println("title : "  + eElement.getElementsByTagName("title").item(0).getTextContent());
+		    		System.out.println("author : "  + eElement.getElementsByTagName("author").item(0).getTextContent());
+		    		System.out.println("genre : "   + eElement.getElementsByTagName("genre").item(0).getTextContent());
+		    		System.out.println("price : "    + eElement.getElementsByTagName("price").item(0).getTextContent());
 		 		precio_book=eElement.getElementsByTagName("price").item(0).getTextContent();
 				precio=Float.parseFloat(precio_book);
 				total=precio+total;
 				System.out.println("publish_date : "  + eElement.getElementsByTagName("publish_date").item(0).getTextContent());
-		    	System.out.println("description : "   + eElement.getElementsByTagName("description").item(0).getTextContent());
-		    	System.out.println("----------------------------------------------------------------------------------");
+		    		System.out.println("description : "   + eElement.getElementsByTagName("description").item(0).getTextContent());
+		    		System.out.println("----------------------------------------------------------------------------------");
 			}
 		}
 		System.out.println("El costo total de los libros de fantasia son: "+total);
@@ -107,9 +107,9 @@ public class Read_XML {
 			if(resultado){
 				System.out.println("id : "    + eElement.getAttribute("id"));
 		   		System.out.println("title : "  + eElement.getElementsByTagName("title").item(0).getTextContent());
-		    	System.out.println("author : "  + eElement.getElementsByTagName("author").item(0).getTextContent());
-		    	System.out.println("description : "   + eElement.getElementsByTagName("description").item(0).getTextContent());
-		    	System.out.println("----------------------------------------------------------------------------------");			
+		    		System.out.println("author : "  + eElement.getElementsByTagName("author").item(0).getTextContent());
+		    		System.out.println("description : "   + eElement.getElementsByTagName("description").item(0).getTextContent());
+		    		System.out.println("----------------------------------------------------------------------------------");			
 			}
 		}
 }	
